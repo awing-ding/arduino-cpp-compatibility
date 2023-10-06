@@ -1,0 +1,5 @@
+# vim backup files
+*~
+
+# debug script files
+*.sh
