@@ -24,7 +24,7 @@ test_api.o: lib/test_api.cpp
 
 ## use
 
-Once you compiled the code into a static library, you can simply import the header provided "libarddebug.hpp", if you compiled the library under a different name, you should rename the provided header. You can find the library documentation [here](https://awing-ding.github.io/arduino-cpp-compatibility/index.html). 
+Once you compiled the code into a static library, you can simply import the header provided "libarddebug.hpp", if you compiled the library under a different name, you should rename the provided header. You can find the library documentation [here](https://awing-ding.github.io/arduino-cpp-compatibility/html/index.html). 
 
 ## Development
 
