@@ -29,14 +29,19 @@ int LED_BUILTIN = 13; /**< Pin assigned to the builtin led */
  * @return 0
  */
 int digitalWrite(int pin, int value) {
+    if (value != LOW && value != HIGH) {
+        log("trying to write invalid value\n");
+        fprintf(stderr, "\33[31mtrying to write invalid value (%d)\33[0m\n", value);
+        throw std::exception();
+    }
     if (pin < 0 || pin > DIGITAL_PIN_NUMBER - 1) {
         log("trying to modify invalid pin\n");
-        fprintf(stderr, "trying to modify invalid pin (%d)\n", pin);
+        fprintf(stderr, "\33[31m trying to modify invalid pin (%d)\33[0m\n", pin);
         throw std::exception();
     }
     if (digital_pin_mode_register[pin] == INPUT) {
         log("trying to write to input pin\n");
-        fprintf(stderr, "trying to write to input pin (%d), registers dumped\n", pin);
+        fprintf(stderr, "\33[31m trying to write to input pin (%d), registers dumped\33[0m\n", pin);
         logRegisters();
         throw std::exception();
     }
@@ -55,12 +60,12 @@ int digitalWrite(int pin, int value) {
 int digitalRead(int pin) {
     if (pin < 0 || pin > DIGITAL_PIN_NUMBER - 1) {
         log("trying to modify invalid pin\n");
-        fprintf(stderr, "trying to modify invalid pin (%d)\n", pin);
+        fprintf(stderr, "\33[31mtrying to modify invalid pin (%d)\33[0m\n", pin);
         throw std::exception();
     }
     if (digital_pin_mode_register[pin] == OUTPUT) {
         log("trying to read from output pin\n");
-        fprintf(stderr, "trying to read from output pin (%d), registers dumped\n", pin);
+        fprintf(stderr, "\33[31mtrying to read from output pin (%d), registers dumped\33[0m\n", pin);
         logRegisters();
         throw std::exception();
     }
@@ -80,12 +85,12 @@ int analogWrite(int pin, int value) {
     pin = std::abs(pin) - 1;
     if (pin > ANALOG_PIN_NUMBER - 1 || pin < 0) {
         log("trying to modify invalid pin\n");
-        fprintf(stderr, "trying to modify invalid pin (A%d)\n", pin);
+        fprintf(stderr, "\33[31mtrying to modify invalid pin (A%d)\33[0m\n", pin);
         throw std::exception();
     }
     if (digital_pin_mode_register[pin] == INPUT) {
         log("trying to write to input pin\n");
-        fprintf(stderr, "trying to write to input pin (A%d), registers dumped\n", pin);
+        fprintf(stderr, "\33[31mtrying to write to input pin (A%d), registers dumped\33[0m\n", pin);
         throw std::exception();
     }
     analog_pin_register[pin] = value;
@@ -104,12 +109,12 @@ int analogRead(int pin) {
     pin = std::abs(pin) - 1;
     if (pin > ANALOG_PIN_NUMBER - 1 || pin < 0) {
         log("trying to modify invalid pin\n");
-        fprintf(stderr, "trying to modify invalid pin (A%d)\n", pin);
+        fprintf(stderr, "\33[31mtrying to modify invalid pin (A%d)\33[0m\n", pin);
         throw std::exception();
     }
     if (digital_pin_mode_register[pin] == OUTPUT) {
         log("trying to read from output pin\n");
-        fprintf(stderr, "trying to read from output pin (A%d), registers dumped\n", pin);
+        fprintf(stderr, "\33[31mtrying to read from output pin (A%d), registers dumped\33[0m\n", pin);
         throw std::exception();
     }
     return analog_pin_register[pin];
