@@ -17,6 +17,8 @@
 #include <chrono>
 #include <thread>
 
+int LED_BUILTIN = 13; /**< Pin assigned to the builtin led */
+
 /**
  * simulate the arduino digital write function
  *  - throws an exception if the pin is invalid
