@@ -16,7 +16,8 @@
  */
 enum PinMode {
     INPUT, /**< the pin is in input mode (0) */
-    OUTPUT /**< the pin is in output mode (1) */
+    OUTPUT, /**< the pin is in output mode (1) */
+    INPUT_PULLUP = INPUT /**< the pin is in input mode with pullup resistor (0), as register represent electrical state and not logical state, it doesn't matter */
 };
 
 /**
