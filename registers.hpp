@@ -15,7 +15,7 @@
 #include "ardtype.hpp"
 
 #define DIGITAL_PIN_NUMBER 32 /**< the number of digital pins */
-#define ANALOG_PIN_NUMBER 8 /**< the number of analog pins */
+#define ANALOG_PIN_NUMBER 8 /**< the number of analog pins, cannot be set higher than 9 */
 
 extern std::array<int, DIGITAL_PIN_NUMBER> digital_pin_register; /**< the register for the value of the digital pins */
 extern std::array<int, ANALOG_PIN_NUMBER> analog_pin_register; /**< the register for the value of the analog pins */
