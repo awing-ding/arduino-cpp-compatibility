@@ -171,8 +171,8 @@ int pinMode(int pin, PinMode mode) {
  * @param out_min the minimum value of the output range
  * @param out_max the maximum value of the output range
  * @return the mapped value
- */ 
-long map(long x, long in_min, long in_max, long out_min, long out_max){ 
+ */
+long map(long x, long in_min, long in_max, long out_min, long out_max){
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['readanalogpin_0',['ReadAnalogPin',['../structTestApi.html#af2fdbc29afdd499a02a96e7a3e72bb54',1,'TestApi']]],
-  ['readdigitalpin_1',['ReadDigitalPin',['../structTestApi.html#a592014b033d007e88dda804921291642',1,'TestApi']]],
+  ['readanalogpin_0',['ReadAnalogPin',['../structarduinoTest_1_1TestApi.html#a3cf808fe0e7efd63f367f5dc6621275e',1,'arduinoTest::TestApi']]],
+  ['readdigitalpin_1',['ReadDigitalPin',['../structarduinoTest_1_1TestApi.html#a1f6d031f5cae712f1d35673e7df72707',1,'arduinoTest::TestApi']]],
   ['registers_2ecpp_2',['registers.cpp',['../registers_8cpp.html',1,'']]],
   ['registers_2ehpp_3',['registers.hpp',['../registers_8hpp.html',1,'']]]
 ];

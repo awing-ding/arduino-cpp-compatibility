@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['map_0',['map',['../test__env_8cpp.html#aada2d75bc8a8c6eb845bd940eadfa3fd',1,'map(long x, long in_min, long in_max, long out_min, long out_max):&#160;test_env.cpp'],['../test__env_8hpp.html#aada2d75bc8a8c6eb845bd940eadfa3fd',1,'map(long x, long in_min, long in_max, long out_min, long out_max):&#160;test_env.cpp']]],
-  ['micros_1',['micros',['../test__env_8cpp.html#a9aaa3d6fc24df706a24d4b366525bc75',1,'micros():&#160;test_env.cpp'],['../test__env_8hpp.html#a9aaa3d6fc24df706a24d4b366525bc75',1,'micros():&#160;test_env.cpp']]],
-  ['millis_2',['millis',['../test__env_8cpp.html#a940b7d59de47e1432c355fca01620ac3',1,'millis():&#160;test_env.cpp'],['../test__env_8hpp.html#a940b7d59de47e1432c355fca01620ac3',1,'millis():&#160;test_env.cpp']]]
+  ['log_0',['log',['../test__api_8cpp.html#a29c928389e06328cb10ddfadd1c83740',1,'arduinoTest']]],
+  ['logregisters_1',['logRegisters',['../test__api_8cpp.html#a61069f30afbdbac26b93846b20aa1bd3',1,'arduinoTest']]],
+  ['logvar_2',['logVar',['../test__api_8cpp.html#a29404f75ef4688c419a148f71ff5d93c',1,'arduinoTest']]]
 ];

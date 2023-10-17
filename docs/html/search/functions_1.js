@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['begin_0',['begin',['../structserial.html#a127db2d2dd853a23fc5d310042e918b7',1,'serial']]]
+  ['begin_0',['begin',['../structarduinoTest_1_1serial.html#ad771aebb505f99eb692d1288b2f18bac',1,'arduinoTest::serial']]]
 ];

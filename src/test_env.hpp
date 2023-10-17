@@ -3,7 +3,7 @@
  *
  * @brief Arduino compatibility
  *
- * Thies headers contains the declarations for the global functions use to 
+ * Thies headers contains the declarations for the global functions use to
  * simulate the Arduino environment.
  */
 #ifndef ARDUINO_TEST_ENV_HPP
@@ -40,7 +40,7 @@ double tan(double x);
  *
  * Simulate some of the functionnality of the Arduino Serial class
  */
-struct serial { 
+struct serial {
     void begin(int baud);
     void print(char const * message);
     void println(char const * message);
