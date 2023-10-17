@@ -31,9 +31,9 @@ enum DigitalPinValue {
 };
 
 /**
- * @brief Analog pin value
+ * @brief Analog pin name
  *
- * This enum is used to define the value of a analog pin.
+ * This enum is used to define the name of a analog pin.
  */
 enum AnalogPin{
     A0 = -1,

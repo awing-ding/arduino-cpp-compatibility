@@ -17,6 +17,7 @@
 #include "test_api.hpp"
 
 
+namespace arduinoTest{
 /**
  * the logic to set the mode of digital pins
  *   - return -1 if the pin is invalid
@@ -157,6 +158,7 @@ void logVar(int pin){
     outfile << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now() - Cstart).count() << "," << ((pin < 0) ? 'A' : '\0') << ((pin < 0) ? std::abs(pin +1) : pin) << "," << pinValue << std::endl;
 }
 
+}
 
 
 

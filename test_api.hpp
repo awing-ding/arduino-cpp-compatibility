@@ -12,6 +12,13 @@
 #include "registers.hpp"
 #include "ardtype.hpp"
 
+namespace arduinoTest{
+/**
+ * @brief Test API
+ *
+ * This class contains the logic for the library to use registers and log
+ * variables.
+ */
 struct TestApi {
     static int SetModeDigital(int pin, PinMode mode);
     static int SetModeAnalog(int pin, PinMode mode);
@@ -26,5 +33,7 @@ struct TestApi {
 void logRegisters();
 void log(char const * message);
 void logVar(int pin);
+
+}
 
 #endif // TEST_API_HPP
