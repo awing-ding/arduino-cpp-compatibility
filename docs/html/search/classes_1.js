@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testapi_0',['TestApi',['../structTestApi.html',1,'']]]
+  ['testapi_0',['TestApi',['../structarduinoTest_1_1TestApi.html',1,'arduinoTest']]]
 ];

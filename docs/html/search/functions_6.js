@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['pinmode_0',['pinmode',['../test__env_8cpp.html#aa85f4b189fadf02cc7a6cbe7f6e85ff4',1,'pinMode(int pin, PinMode mode):&#160;test_env.cpp'],['../test__env_8hpp.html#aa85f4b189fadf02cc7a6cbe7f6e85ff4',1,'pinMode(int pin, PinMode mode):&#160;test_env.cpp']]],
-  ['print_1',['print',['../structserial.html#a5a6e84f1bd14bc85b3ba8e8240db0e86',1,'serial']]],
-  ['println_2',['println',['../structserial.html#ab9426a4944c3962f01a5680e94925d61',1,'serial']]]
+  ['map_0',['map',['../test__env_8cpp.html#a8313742a8bfa806104327898ea6b4821',1,'arduinoTest']]],
+  ['max_1',['max',['../test__env_8cpp.html#a5bf4af49220698640e16d540cfea5a79',1,'arduinoTest']]],
+  ['micros_2',['micros',['../test__env_8cpp.html#acfa35588ed857927b419b942d9bceede',1,'arduinoTest']]],
+  ['millis_3',['millis',['../test__env_8cpp.html#a53597b9c9f514324d00707eadeee32bf',1,'arduinoTest']]],
+  ['min_4',['min',['../test__env_8cpp.html#ad6ed91d5fdbd253bdfa0fde306c83e4a',1,'arduinoTest']]]
 ];

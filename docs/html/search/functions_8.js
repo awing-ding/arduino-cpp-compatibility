@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setmodeanalog_0',['SetModeAnalog',['../structTestApi.html#a137bf91999b019cebbd3de9b923f9cce',1,'TestApi']]],
-  ['setmodedigital_1',['SetModeDigital',['../structTestApi.html#a799f8f00a1da4412e4b43e0c60a855f9',1,'TestApi']]]
+  ['readanalogpin_0',['ReadAnalogPin',['../structarduinoTest_1_1TestApi.html#a3cf808fe0e7efd63f367f5dc6621275e',1,'arduinoTest::TestApi']]],
+  ['readdigitalpin_1',['ReadDigitalPin',['../structarduinoTest_1_1TestApi.html#a1f6d031f5cae712f1d35673e7df72707',1,'arduinoTest::TestApi']]]
 ];

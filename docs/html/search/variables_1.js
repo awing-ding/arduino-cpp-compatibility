@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['digital_5fpin_5fmode_5fregister_0',['digital_pin_mode_register',['../registers_8cpp.html#a2be03b376b197a6e4713e3075ac2d8dc',1,'digital_pin_mode_register:&#160;registers.cpp'],['../registers_8hpp.html#a2be03b376b197a6e4713e3075ac2d8dc',1,'digital_pin_mode_register:&#160;registers.cpp']]],
-  ['digital_5fpin_5fregister_1',['digital_pin_register',['../registers_8cpp.html#a68060fbb19f48642d7b33d8dd9049520',1,'digital_pin_register:&#160;registers.cpp'],['../registers_8hpp.html#a68060fbb19f48642d7b33d8dd9049520',1,'digital_pin_register:&#160;registers.cpp']]],
-  ['digitalpinnumber_2',['digitalPinNumber',['../structTestApi.html#af41d738edce03dfe0de6aae27e33993e',1,'TestApi']]]
+  ['digital_5fpin_5fmode_5fregister_0',['digital_pin_mode_register',['../registers_8cpp.html#a5626e0f906c39cd679e6c5a2cb1cea66',1,'arduinoTest']]],
+  ['digital_5fpin_5fregister_1',['digital_pin_register',['../registers_8cpp.html#a2e8f95875f0ec7d186f0a37654312952',1,'arduinoTest']]],
+  ['digitalpinnumber_2',['digitalPinNumber',['../structarduinoTest_1_1TestApi.html#a4a7eca2076bfee0fb5da34f0114f81b0',1,'arduinoTest::TestApi']]]
 ];

@@ -3,7 +3,7 @@
  *
  * @brief Arduino API
  *
- * This file contains the logic for the library to use registers and log 
+ * This file contains the logic for the library to use registers and log
  * variables.
  */
 #include <stdlib.h>
@@ -159,7 +159,3 @@ void logVar(int pin){
 }
 
 }
-
-
-
-
