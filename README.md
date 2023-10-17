@@ -22,9 +22,41 @@ test_api.o: lib/test_api.cpp
 	g++ -c test_api.cpp -o build/test_api.o -Wall
 ```
 
-## use
+## Use
 
-Once you compiled the code into a static library, you can simply import the header provided "libarddebug.hpp", if you compiled the library under a different name, you should rename the provided header. You can find the library documentation [here](https://awing-ding.github.io/arduino-cpp-compatibility/html/index.html) you should add ``using namespace arduinoTest`` at the top of your file.
+Once you compiled the code into a static library, you can simply import the header provided "libarddebug.hpp", if you compiled the library under a different name, you should rename the provided header. You can find the library documentation [here](https://awing-ding.github.io/arduino-cpp-compatibility/html/index.html) you should add ``using namespace arduinoTest`` at the top of your file. Then you must pilot your test with a regular c++ main function
+
+e.g.
+
+```cpp
+
+#include "libarddebug.hpp"
+
+#define LED 13
+#define INPUT A0
+
+using namespace arduinoTest;
+
+void setup(){
+    pinMode(LED, OUTPUT);
+}
+
+void loop(){
+    if (INPUT > 10){
+        digitalWrite(LED, HIGH);
+    }
+    else {
+        digitalWrite(LED, LOW);
+    }
+}
+
+int main(int argc, char** argv){
+    for (int i = 0; i < 10; i++){
+       editDigitalPin(INPUT, A0);
+       loop()
+    }
+}
+```
 
 ## Development
 
