@@ -12,6 +12,8 @@
 #include "registers.hpp"
 #include "ardtype.hpp"
 
+namespace arduinoTest {
+
 int digitalWrite(int pin, int value);
 int digitalRead(int pin);
 int analogWrite(int pin, int value);
@@ -19,10 +21,19 @@ int analogRead(int pin);
 int delay(int ms);
 int delayMicroseconds(int us);
 int pinMode(int pin, PinMode mode);
-void logRegisters();
-void log(char const * message);
-void logVar(int pin);
+
 long map(long x, long in_min, long in_max, long out_min, long out_max);
+//long long abs(long long x);
+double constrains(double x, double min, double max);
+double max(double x, double y);
+double min(double x, double y);
+double pow(double x, double y);
+double sq(double x);
+double sqrt(double x);
+
+double cos(double x);
+double sin(double x);
+double tan(double x);
 
 /**
  * @brief Arduino Serial compatibility
@@ -38,5 +49,7 @@ struct serial {
 
 int millis();
 int micros();
+
+}
 
 #endif

@@ -17,9 +17,11 @@
 #define DIGITAL_PIN_NUMBER 32 /**< the number of digital pins */
 #define ANALOG_PIN_NUMBER 8 /**< the number of analog pins, cannot be set higher than 9 */
 
+namespace arduinoTest {
 extern std::array<int, DIGITAL_PIN_NUMBER> digital_pin_register; /**< the register for the value of the digital pins */
 extern std::array<int, ANALOG_PIN_NUMBER> analog_pin_register; /**< the register for the value of the analog pins */
 extern std::array<PinMode, DIGITAL_PIN_NUMBER> digital_pin_mode_register; /**< the register for the mode of the digital pins */
 extern std::array<PinMode, ANALOG_PIN_NUMBER> analog_pin_mode_register; /**< the register for the mode of the analog pins */
+}
 
 #endif // REGISTERS_HPP
