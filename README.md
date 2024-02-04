@@ -29,11 +29,10 @@ Once you compiled the code into a static library, you can simply import the head
 e.g.
 
 ```cpp
-
 #include "libarddebug.hpp"
 
 #define LED 13
-#define INPUT A0
+#define MIC 14
 
 using namespace arduinoTest;
 
@@ -42,7 +41,7 @@ void setup(){
 }
 
 void loop(){
-    if (INPUT > 10){
+    if (digitalRead(MIC) > 10){
         digitalWrite(LED, HIGH);
     }
     else {
@@ -52,10 +51,11 @@ void loop(){
 
 int main(int argc, char** argv){
     for (int i = 0; i < 10; i++){
-       editDigitalPin(INPUT, A0);
+       TestAPI::EditDigitalPin(MIC, i+2);
        loop()
     }
 }
+
 ```
 
 ## Development
